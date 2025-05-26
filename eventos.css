@@ -1,0 +1,143 @@
+@import url(https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 150px;
+
+}
+.nav-amarillo {
+    background-color:  #F4BC4A;
+    color:black;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+
+.nav-cafe{
+    background-color:  #683C11;
+    color:white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-family: 'Stegera';
+    transition: all 0.3s ease; /* Suaviza la animación */
+    overflow: hidden;
+}
+
+.navbar-amarillo a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+
+  
+  
+    
+}
+
+.navbar-cafe a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    height: 90px; /* Aumenta la altura */
+    
+    
+}
+
+.slider-box {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+.titleC {
+    text-decoration: none;
+    color:#fedc97;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+
+.restaurante{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+}
+
+.restaurante img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* recorta y ajusta sin deformar */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+.restaurante img:hover {
+      transform: scale(1.05); /* pequeño efecto al pasar el mouse */
+    }
