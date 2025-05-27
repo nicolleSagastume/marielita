@@ -80,6 +80,63 @@ header{
     
     
 }
+@media (max-width: 1024px) {
+    nav {
+        gap: 1rem;
+    }
+    
+    nav a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets pequeñas (600px - 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.5rem;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    
+    .nav-amarillo {
+        border-color: #FFD700;
+    }
+    
+    .nav-cafe {
+        border-color: #8B4513;
+    }
+}
+
+/* Móviles (hasta 600px) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles muy pequeños (hasta 400px) */
+@media (max-width: 400px) {
+    nav a {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+}
 /* Contenedor del slider de imágenes */
 .slider-box {
     width: 1280px;
